@@ -1,35 +1,55 @@
-# <Your product name>
-
-> Fill this top section from your Examate project card on Day 1. Replace every line in angle brackets.
+# SignalPost
 
 ## Problem
-<3–5 sentences: who struggles with what today, and what your product changes.>
+
+Railway engineers need to find rules from large railway manuals while working near railway tracks. Slow internet makes it difficult to open large PDF files. SignalPost helps them find the right information quickly. It gives short answers with references to the railway manuals.
 
 ## Who it is for
-<One or two real user types, for example "compliance officer at a gold-loan NBFC in Coimbatore".>
+
+Railway Signal and Telecom engineers who need to check maintenance rules while working in the field with slow internet.
 
 ## Signature feature
-<One sentence: the feature only your product has.>
+
+Trackside Mode gives a short, three-line answer with the manual reference and is designed to work with slow internet.
 
 ## Hardest problem (my interview story)
-<In your own words, from your project card.>
+
+The main challenge is finding the correct information from large railway manuals and giving the right answer quickly. The app must use very little internet data and show the correct manual reference.
 
 ## Dataset
+
 | Source | Link | Documents | Pages | Licence / terms |
 |---|---|---|---|---|
-| <name> | <url> | <n> | <n> | <licence> |
+| RDSO | https://rdso.indianrailways.gov.in/ | Railway technical documents | To be counted | Check usage rules |
+| Indian Railway Signal Engineering Manual | Official link to be added | Signal manual | To be counted | Check usage rules |
+
+Target: Collect at least 1,200 pages of railway documents.
 
 ## 10 real questions
+
 See [docs/QUESTIONS.md](docs/QUESTIONS.md).
 
 ## Run it
+
 ```bash
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+python -m venv .venv
+
+# Windows
+.venv\Scripts\activate
+
 pip install -r requirements-dev.txt
-cp .env.example .env                                 # Windows: copy .env.example .env
+
+copy .env.example .env
+
 uvicorn app.main:app --reload
-curl localhost:8000/health
+```
+
+Check whether the app is running:
+
+```bash
+curl http://localhost:8000/health
 ```
 
 ## Live link
-<Added in Week 2>
+
+To be added in Week 2.

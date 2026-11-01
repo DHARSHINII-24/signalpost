@@ -1,0 +1,3 @@
+Point machines require maintenance according to the applicable railway manual.
+Track circuit restoration must follow approved railway procedures.
+Signalling equipment earthing requirements must be checked in the applicable specification.
